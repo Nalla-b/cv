@@ -1,0 +1,367 @@
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  width: 5%;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  /* hide this */
+  z-index: 2;
+  /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  position: absolute;
+  width: 100vh;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  border-radius: 5px;
+  color: white;
+  height: 100vh;
+  background: black;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+  list-style-type: none;
+  padding: 10px 0;
+  font-size: 30px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul {
+  transform: none;
+}
+
+.main__container {
+  display: flex;
+  width: 100vh;
+  height: auto;
+}
+
+.home__body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Montserrat", "Avenir Next", "Avenir", sans-serif;
+  background-image: url(../img/moi-mini.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.home__body > img {
+  width: auto;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  transition: color 0.6s ease;
+}
+
+a:hover {
+  color: white;
+}
+
+.home__body > h1 {
+  font-size: 3em;
+  margin: 0.67em 0;
+  position: relative;
+  top: 50px;
+  left: 15px;
+}
+
+.main__container {
+  display: flex;
+  width: 100vh;
+  height: auto;
+}
+
+.aboutme__body > h1 {
+  text-align: left;
+}
+
+.aboutme__body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: "Montserrat", "Avenir Next", "Avenir", sans-serif;
+  background-image: radial-gradient(circle, #b2c6c6, #96bbc1, #7aaec0, #63a0c1, #5591c1, #4480ae, #32709c, #1f608a, #074b64, #0a3540, #0d1f22, #030404);
+  background-size: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  transition: color 0.6s ease;
+}
+
+a:hover {
+  color: white;
+}
+
+.aboutme__section {
+  height: 50%;
+  margin-top: 70px;
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.aboutme__section--expe {
+  text-align: left;
+  margin-top: 20px;
+  padding: 2%;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: #030404 solid 2px;
+}
+
+.aboutme__section--form {
+  text-align: left;
+  margin-top: 30px;
+  padding: 2%;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: #030404 solid 2px;
+}
+
+.aboutme__section--cent {
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 2%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.aboutme__section--cent > a:hover {
+  color: black;
+}
+
+.body__pic {
+  opacity: 0.8;
+  margin-left: 50px;
+}
+
+.aboutme__section--hob {
+  margin-top: 30px;
+  padding: 2%;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-bottom: #030404 solid 2px;
+}
+
+.aboutme__icons {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.aboutme__section--cent > a {
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.main__container {
+  display: flex;
+  width: 100vh;
+  height: auto;
+}
+
+.contactme__body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: "Montserrat", "Avenir Next", "Avenir", sans-serif;
+  background-size: 100%;
+  background-image: radial-gradient(circle, #b2c6c6, #96bbc1, #7aaec0, #63a0c1, #5591c1, #4480ae, #32709c, #1f608a, #074b64, #0a3540, #0d1f22, #030404);
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+  transition: color 0.6s ease;
+}
+
+a:hover {
+  color: white;
+}
+
+.contactme__body {
+  font-size: 1.5em;
+}
+
+.contactme__phone {
+  background-color: crimson;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  font-size: 0.7em;
+  padding: 5%;
+}
+
+.contactme__mail {
+  background-color: darkblue;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  font-size: 0.7em;
+  padding: 5%;
+  margin-top: 15px;
+}
+
+.contactme__loca {
+  background-color: deeppink;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  font-size: 0.7em;
+  padding: 5%;
+  margin-top: 15px;
+}
+
+.contactme__body > h1 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 70px;
+  text-decoration: underline;
+}
+
+.contactme__icon {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.main__container {
+  display: flex;
+  width: 100vh;
+  height: auto;
+}
+
+.project__body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: "Montserrat", "Avenir Next", "Avenir", sans-serif;
+  background-image: radial-gradient(circle, #b2c6c6, #96bbc1, #7aaec0, #63a0c1, #5591c1, #4480ae, #32709c, #1f608a, #074b64, #0a3540, #0d1f22, #030404);
+  background-size: 100%;
+}
+
+.project__body > img {
+  width: auto;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  transition: color 0.6s ease;
+}
+
+a:hover {
+  color: white;
+}
+
+.projets {
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.project__body > h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 60px;
+}
+
+/*# sourceMappingURL=main.css.map */

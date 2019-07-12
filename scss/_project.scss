@@ -1,0 +1,46 @@
+.main__container{
+    display: flex;
+    width:100vh;
+    height: auto;
+}
+
+.project__body
+{
+  margin: 0;
+  padding: 0;
+  color:black;
+  font-family: "Montserrat","Avenir Next", "Avenir", sans-serif;
+  background-image: radial-gradient(circle, #b2c6c6, #96bbc1, #7aaec0, #63a0c1, #5591c1, #4480ae, #32709c, #1f608a, #074b64, #0a3540, #0d1f22, #030404);
+  background-size: 100%;
+  
+}
+
+.project__body>img{
+  width: auto;
+  height:100%;
+}
+
+a{
+  text-decoration: none;
+  color:grey;
+  transition: color 0.6s ease;
+}
+
+a:hover
+{
+  color:white;
+}
+
+.projets{
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.project__body>h1{
+  text-align: center;
+  font-size: 2em;
+  margin-top: 60px;
+}
+
+

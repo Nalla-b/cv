@@ -1,0 +1,113 @@
+.main__container{
+    display: flex;
+    width:100vh;
+    height: auto;
+}
+
+.aboutme__body>h1{
+  text-align:left;
+}
+
+.aboutme__body
+{
+  margin: 0;
+  padding: 0;
+  color:black;
+  font-family: "Montserrat","Avenir Next", "Avenir", sans-serif;
+  background-image: radial-gradient(circle, #b2c6c6, #96bbc1, #7aaec0, #63a0c1, #5591c1, #4480ae, #32709c, #1f608a, #074b64, #0a3540, #0d1f22, #030404);
+  background-size: 100%;
+  
+}
+
+a{
+  text-decoration: none;
+  color:grey;
+  transition: color 0.6s ease;
+}
+
+a:hover
+{
+  color:white;
+}
+
+.aboutme__section{
+  height: 50%;
+  margin-top: 70px;
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.aboutme__section--expe{
+  text-align: left;
+  margin-top: 20px;
+  padding: 2%;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: #030404 solid 2px;
+}
+
+.aboutme__section--form{
+  text-align:left;
+  margin-top: 30px;
+  padding: 2%;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: #030404 solid 2px;
+}
+
+.aboutme__section--cent{
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 2%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.aboutme__section--cent>a:hover{
+  color: black;
+}
+
+.body__pic{
+  opacity: 0.8;
+  margin-left: 50px;
+}
+
+.aboutme__section--hob{
+  margin-top: 30px;
+  padding: 2%;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline-flex;
+  flex-direction:row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-bottom: #030404 solid 2px;
+}
+
+.aboutme__icons{
+  display: inline-flex;
+  flex-direction:row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.aboutme__section--cent>a{
+  color: white;
+  text-align: center;
+}
+
+h2{
+  text-decoration: underline;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
