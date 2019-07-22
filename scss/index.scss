@@ -1,3 +1,11 @@
+html { 
+  margin:0;
+  padding:0;
+  background: url(../img/flame.jpg) no-repeat center fixed; 
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
 .main__container{
     display: flex;
     width:100vh;
@@ -12,22 +20,21 @@
 {
   margin: 0;
   padding: 0;
-  color:black;
+  color:white;
   font-family: "Montserrat","Avenir Next", "Avenir", sans-serif;
-  background-image: radial-gradient(circle, #b2c6c6, #96bbc1, #7aaec0, #63a0c1, #5591c1, #4480ae, #32709c, #1f608a, #074b64, #0a3540, #0d1f22, #030404);
   background-size: 100%;
   
 }
 
 a{
   text-decoration: none;
-  color:grey;
+  color:#7DDFE3;
   transition: color 0.6s ease;
 }
 
 a:hover
 {
-  color:white;
+  color:grey;
 }
 
 .aboutme__section{
@@ -36,6 +43,11 @@ a:hover
   text-align: left;
   margin-left: 10px;
   margin-right: 10px;
+  border-bottom: #030404 solid 2px;
+}
+
+.aboutme__section>p{
+margin-left: 25px;
 }
 
 .aboutme__section--expe{
@@ -58,14 +70,14 @@ a:hover
 
 .aboutme__section--cent{
   margin-top: 30px;
-  border-radius: 10px;
   padding: 2%;
   margin-left: 10px;
   margin-right: 10px;
+  border-bottom: #030404 solid 2px;
 }
 
 .aboutme__section--cent>a:hover{
-  color: black;
+  color:grey;
 }
 
 .body__pic{
@@ -101,6 +113,21 @@ h2{
   text-decoration: underline;
   text-align: center;
 }
+
+.aboutme__name{
+  margin-left: 35px;
+}
+
+@media screen and (min-width:450px){
+
+.container{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+}
+
 
 
 

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
     <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5e09a246d4.js"></script>
     <style>
         * {
             box-sizing: border-box;
@@ -26,19 +27,118 @@
             <span></span>
 
             <ul id="menu">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="aboutme.html">A propos de moi</a></li>
-                <li><a href="project.html">Projets</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#experience">Mes expériences</a></li>
+                <li><a href="#Formation">Ma formation</a></li>
+                <li><a href="#competences">Mes compétences</a></li>
+                <li><a href="#projets">Mes projets</a></li>
+                <li><a href="#passions">Mes passions</a></li>
+                <li><a href="#contact">Contactez moi</a></li>
+
             </ul>
         </div>
     </nav>
 </header>
 
-<body class="home__body">
-    <h1>Allan Bocquet</h1>
-        <br><p>Développeur Web Junior</p>
+<body class="aboutme__body">
+    <section class="aboutme__section">
+        <div class="container">
+            <img class="body__pic" src="../cv/img/moi-mini20.jpg" alt="moi">
+        
+        <h1 class="aboutme__name">Allan Bocquet </br>21 ans</h1>
+    </div>
+        <p>Bonjour et bienvenue sur mon CV, je m'appelle Allan Bocquet et je suis un développeur web junior.<br><br>
+            Après un parcours scolaire éparpillé, j'ai décidé de me tourner vers un secteur que j'apprecie énormement ,
+            c'est a dire l'informatique et internet via une formation de développeur d'applications web/mobile à Pop
+            School Lens.</p>
+    </section>
+    <section class="aboutme__section--expe">
+        <h2 id="experiences">Mes expériences :</h2>
+        <ul>
+            <li>Agent logistique a Viapost : Novembre 2017/Juin 2018.</li><br>
+            <li>Vendangeur avec SCEV Vignobles Poinsot père & fils : SEPTEMBRE 2017.</li><br>
+            <li>Animateur de centre avec la ville de Méricourt : AOUT 2016/AOUT 2017.</li><br>
+
+
+        </ul>
+    </section>
+    <section class="aboutme__section--form">
+        <h2 id="Formation">Mes formations :</h2>
+        <ul>
+            <li>Formation développeur web/mobile avec PopSchool Lens : 2019.</li><br>
+            <li>BAFA : 2017.</li><br>
+            <li>Bac STMG Specialité ressources humaines au lycée Pablo Picasso : Juin 2016.</li><br>
+
+
+        </ul>
+    </section>
+
+    <section class="aboutme__section--cent">
+        <h2 id="competences">Mes compétences :</h2>
+        <div class="aboutme__icons">
+            <a href="#"><i class="fab fa-html5 fa-8x"></i></a>
+            <a href="#"><i class="fab fa-css3-alt fa-8x"></i></a>
+            <a href="#"><i class="fab fa-js-square fa-8x"></i></a>
+            <a href="#"><i class="fab fa-github fa-8x"></i></a>
+            <a href="#"><i class="fab fa-bootstrap fa-8x"></i></a>
+            <a href="#"><i class="fab fa-wordpress fa-8x"></i></a>
+            <a href="#"><i class="fab fa-sass fa-8x"></i></a>
+            <a href="#"><i class="fab fa-php fa-8x"></i></a>
+            <a href="#"><i class="fab fa-symfony fa-8x"></i></a>
+            <a href="#"><i class="fab fa-react fa-8x"></i></a>
+            <a href="#"><i class="fab fa-node fa-8x"></i></a>
+            <a href="#"><i class="fas fa-database fa-8x"></i></a>
+        </div>
+    </section>
+
+    <h2 id="projets">Mes projets :</h2>
+    <div class="projets">
+        <div class="projets__first">
+            <h2>Auto Syteme :</h2>
+            <p>Réalisation d'un site pour une casse automobile.</p>
+            <a href="http://nalla-b.fr/projet_perso/" target="_blank"><img class="project__pic"
+                    src="../cv/img/auto.png"></a>
+        </div>
+    </div>
+    <section class="aboutme__section--hob">
+        <h2 id="passions">Mes passions :</h2>
+        <ul>
+            <li>Le football :</li>
+            <p>Je suis un grand passionné de football et plus particulierement de <img src="/img/om(1).png" alt="l'OM"> depuis mon plus jeune age et j'en
+                pratique depuis mes 5 ans.</p>
+            <li>Les jeux vidéos :</li>
+            <p>Ma passion pour les jeux vidéos a commencée très tôt avec la Super Nintendo et Mario, depuis ma passion
+                n'a fait qu'accroitre , je suis fan de FPS et de jeux de sport.</p>
+        </ul>
+        <p>J'ai également d'autre centres d'interêts comme le tennis , la musique et bien sur l'informatique.</p>
+    </section>
+
+
+    <h2 id ="contact">Contactez-moi :</h2>
+    <div class="contactme__body">
+        <div class="contactme__loca">
+            <h2>Localisation :</h2>
+            <a href="#"><span>Lens</span></a>
+        </div>
+        <div class="contactme__mail">
+            <h2>Mail :</h2>
+            <a href="#"><span>allan0698@hotmail.fr</span></a>
+        </div>
+        <div class="contactme__phone">
+            <h2>Phone :</h2>
+            <a href="#"><span>06.18.56.49.53</span></a>
+        </div>
+    </div>
+
+    <div class="contactme__icon">
+        <a href="#"><i class="fab fa-facebook fa-5x"></i></a>
+        <a href="https://www.linkedin.com/in/allan-bocquet-804180188/" target="_blank"><i
+                class="fab fa-linkedin-in fa-5x"></i></a>
+        <a href="https://github.com/Nalla-b" target="_blank"><i class="fab fa-github fa-5x"></i></a>
+    </div>
+
+
 
 </body>
+<footer>Copyright </footer>
 
 </html>

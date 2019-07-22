@@ -107,43 +107,12 @@
   transform: none;
 }
 
-.main__container {
-  display: flex;
-  width: 100vh;
-  height: auto;
-}
-
-.home__body {
+html {
   margin: 0;
   padding: 0;
-  color: white;
-  font-family: "Montserrat", "Avenir Next", "Avenir", sans-serif;
-  background-image: url(../img/moi-mini.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.home__body > img {
-  width: auto;
-  height: 100%;
-}
-
-a {
-  text-decoration: none;
-  color: grey;
-  transition: color 0.6s ease;
-}
-
-a:hover {
-  color: white;
-}
-
-.home__body > h1 {
-  font-size: 3em;
-  margin: 0.67em 0;
-  position: relative;
-  top: 50px;
-  left: 15px;
+  background: url(../img/flame.jpg) no-repeat center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 .main__container {
@@ -159,20 +128,19 @@ a:hover {
 .aboutme__body {
   margin: 0;
   padding: 0;
-  color: black;
+  color: white;
   font-family: "Montserrat", "Avenir Next", "Avenir", sans-serif;
-  background-image: radial-gradient(circle, #b2c6c6, #96bbc1, #7aaec0, #63a0c1, #5591c1, #4480ae, #32709c, #1f608a, #074b64, #0a3540, #0d1f22, #030404);
   background-size: 100%;
 }
 
 a {
   text-decoration: none;
-  color: grey;
+  color: #7DDFE3;
   transition: color 0.6s ease;
 }
 
 a:hover {
-  color: white;
+  color: grey;
 }
 
 .aboutme__section {
@@ -181,6 +149,11 @@ a:hover {
   text-align: left;
   margin-left: 10px;
   margin-right: 10px;
+  border-bottom: #030404 solid 2px;
+}
+
+.aboutme__section > p {
+  margin-left: 25px;
 }
 
 .aboutme__section--expe {
@@ -203,14 +176,14 @@ a:hover {
 
 .aboutme__section--cent {
   margin-top: 30px;
-  border-radius: 10px;
   padding: 2%;
   margin-left: 10px;
   margin-right: 10px;
+  border-bottom: #030404 solid 2px;
 }
 
 .aboutme__section--cent > a:hover {
-  color: black;
+  color: grey;
 }
 
 .body__pic {
@@ -247,101 +220,17 @@ h2 {
   text-align: center;
 }
 
-.main__container {
-  display: flex;
-  width: 100vh;
-  height: auto;
+.aboutme__name {
+  margin-left: 35px;
 }
 
-.contactme__body {
-  margin: 0;
-  padding: 0;
-  color: black;
-  font-family: "Montserrat", "Avenir Next", "Avenir", sans-serif;
-  background-size: 100%;
-  background-image: radial-gradient(circle, #b2c6c6, #96bbc1, #7aaec0, #63a0c1, #5591c1, #4480ae, #32709c, #1f608a, #074b64, #0a3540, #0d1f22, #030404);
+@media screen and (min-width: 450px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
 }
-
-a {
-  text-decoration: none;
-  color: gray;
-  transition: color 0.6s ease;
-}
-
-a:hover {
-  color: white;
-}
-
-.contactme__body {
-  font-size: 1.5em;
-}
-
-.contactme__phone {
-  background-color: crimson;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-radius: 10px;
-  font-size: 0.7em;
-  padding: 5%;
-}
-
-.contactme__mail {
-  background-color: darkblue;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-radius: 10px;
-  font-size: 0.7em;
-  padding: 5%;
-  margin-top: 15px;
-}
-
-.contactme__loca {
-  background-color: deeppink;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-radius: 10px;
-  font-size: 0.7em;
-  padding: 5%;
-  margin-top: 15px;
-}
-
-.contactme__body > h1 {
-  font-size: 1.5em;
-  text-align: center;
-  margin-top: 70px;
-  text-decoration: underline;
-}
-
-.contactme__icon {
-  margin-top: 15px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.main__container {
-  display: flex;
-  width: 100vh;
-  height: auto;
-}
-
-.project__body {
-  margin: 0;
-  padding: 0;
-  color: black;
-  font-family: "Montserrat", "Avenir Next", "Avenir", sans-serif;
-  background-image: radial-gradient(circle, #b2c6c6, #96bbc1, #7aaec0, #63a0c1, #5591c1, #4480ae, #32709c, #1f608a, #074b64, #0a3540, #0d1f22, #030404);
-  background-size: 100%;
-}
-
-.project__body > img {
-  width: auto;
-  height: 100%;
-}
-
 a {
   text-decoration: none;
   color: grey;
@@ -356,12 +245,59 @@ a:hover {
   margin-top: 50px;
   margin-left: 10px;
   margin-right: 10px;
+  border-bottom: #030404 solid 2px;
 }
 
-.project__body > h1 {
+@media screen and (min-width: 450px) {
+  .projets__first > p {
+    text-align: left;
+    margin-left: 15px;
+  }
+}
+.contactme__body > a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.6s ease;
+}
+
+.contactme__body > a:hover {
+  color: grey;
+}
+
+.contactme__icon {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+
+.contactme__mail, .contactme__loca, .contactme__phone {
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 35px;
+  font-size: 1em;
+  padding: 5%;
+  margin-top: 15px;
   text-align: center;
-  font-size: 2em;
-  margin-top: 60px;
+  border: solid 3px white;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 450px) {
+  .contactme__body {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  .contactme__phone, .contactme__loca, .contactme__mail {
+    width: 35%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

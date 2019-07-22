@@ -1,70 +1,13 @@
-.main__container{
-    display: flex;
-    width:100vh;
-    height: auto;
-}
 
-.contactme__body
-{
-  margin: 0;
-  padding: 0;
-  color:black;
-  font-family: "Montserrat","Avenir Next", "Avenir", sans-serif;
-  background-size: 100%;
-  background-image: radial-gradient(circle, #b2c6c6, #96bbc1, #7aaec0, #63a0c1, #5591c1, #4480ae, #32709c, #1f608a, #074b64, #0a3540, #0d1f22, #030404);
-  
-}
-
-
-a{
+.contactme__body>a{
   text-decoration: none;
-  color:gray;
+  color:white;
   transition: color 0.6s ease;
 }
 
-a:hover
+.contactme__body>a:hover
 {
-  color:white;
-}
-
-.contactme__body{
-  font-size: 1.5em;
-}
-
-.contactme__phone{
-  background-color: crimson;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-radius:10px;
-  font-size: 0.7em;
-  padding: 5%; 
-}
-
-.contactme__mail{
-  background-color: darkblue;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-radius: 10px;
-  font-size: 0.7em;
-  padding: 5%;
-  margin-top: 15px;
-}
-
-.contactme__loca{
-  background-color: deeppink;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-radius: 10px;
-  font-size: 0.7em;
-  padding: 5%;
-  margin-top: 15px;
-}
-
-.contactme__body>h1{
-  font-size: 1.5em;
-  text-align: center;
-  margin-top: 70px;
-  text-decoration: underline;
+  color:grey;
 }
 
 .contactme__icon{
@@ -75,8 +18,39 @@ a:hover
   justify-content: space-around;
   margin-left: 20px;
   margin-right: 20px;
+  margin-bottom: 50px;
 
 }
+
+
+.contactme__mail,.contactme__loca,.contactme__phone{
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 35px;
+  font-size: 1em;
+  padding: 5%;
+  margin-top: 15px;
+  text-align: center;
+  border: solid 3px white;
+  margin-bottom: 30px;
+}
+
+
+@media screen and (min-width:450px){
+  
+  .contactme__body{
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  .contactme__phone,.contactme__loca,.contactme__mail{
+    width: 35%;
+  }
+
+}
+
 
 
 
