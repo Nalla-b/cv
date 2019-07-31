@@ -1,9 +1,13 @@
+
+
+
 html { 
   margin:0;
   padding:0;
-  background: url(../img/flame.jpg) no-repeat center fixed; 
+  background: url(../img/flame.jpg) no-repeat center fixed;
   -webkit-background-size: cover;
   background-size: cover;
+  scroll-behavior: smooth;
 }
 
 .main__container{
@@ -28,7 +32,7 @@ html {
 
 a{
   text-decoration: none;
-  color:#7DDFE3;
+  color:white;
   transition: color 0.6s ease;
 }
 
@@ -43,7 +47,6 @@ a:hover
   text-align: left;
   margin-left: 10px;
   margin-right: 10px;
-  border-bottom: #030404 solid 2px;
 }
 
 .aboutme__section>p{
@@ -56,7 +59,6 @@ margin-left: 25px;
   padding: 2%;
   margin-left: 10px;
   margin-right: 10px;
-  border-bottom: #030404 solid 2px;
 }
 
 .aboutme__section--form{
@@ -65,7 +67,6 @@ margin-left: 25px;
   padding: 2%;
   margin-left: 10px;
   margin-right: 10px;
-  border-bottom: #030404 solid 2px;
 }
 
 .aboutme__section--cent{
@@ -73,7 +74,6 @@ margin-left: 25px;
   padding: 2%;
   margin-left: 10px;
   margin-right: 10px;
-  border-bottom: #030404 solid 2px;
 }
 
 .aboutme__section--cent>a:hover{
@@ -81,7 +81,6 @@ margin-left: 25px;
 }
 
 .body__pic{
-  opacity: 0.8;
   margin-left: 50px;
 }
 
@@ -94,7 +93,6 @@ margin-left: 25px;
   flex-direction:row;
   justify-content: space-around;
   flex-wrap: wrap;
-  border-bottom: #030404 solid 2px;
 }
 
 .aboutme__icons{
@@ -124,6 +122,10 @@ h2{
   display: flex;
   flex-direction: row;
   margin-bottom: 50px;
+}
+
+.body__pic{
+  margin-top: 30px;
 }
 
 }
