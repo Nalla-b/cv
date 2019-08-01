@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mon cv qui tue a moitié</title>
-    <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
-    <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/5e09a246d4.js"></script>
     <style>
         * {
@@ -42,7 +42,11 @@
             </header>
     <section class="aboutme__section">
         <div class="container">
-            <img class="body__pic" src="../cv/img/moi-mini20.jpg" alt="moi">
+                <picture>
+                        <source class="body__pic--big" srcset="../cv/img/moi.jpg"
+                        media="(min-width: 1000px)">
+                        <img src="../cv/img/moi-mini20.jpg" class="body__pic"/>
+                        </picture>
 
             <h1 class="aboutme__name">Allan Bocquet </br>21 ans</h1>
         </div>
@@ -75,18 +79,39 @@
     <section class="aboutme__section--cent">
         <h2 id="competences">Mes compétences :</h2>
         <div class="aboutme__icons">
-            <a href="#"><i class="fab fa-html5 fa-8x"></i></a>
-            <a href="#"><i class="fab fa-css3-alt fa-8x"></i></a>
-            <a href="#"><i class="fab fa-js-square fa-8x"></i></a>
-            <a href="#"><i class="fab fa-github fa-8x"></i></a>
-            <a href="#"><i class="fab fa-bootstrap fa-8x"></i></a>
-            <a href="#"><i class="fab fa-wordpress fa-8x"></i></a>
-            <a href="#"><i class="fab fa-sass fa-8x"></i></a>
-            <a href="#"><i class="fab fa-php fa-8x"></i></a>
-            <a href="#"><i class="fab fa-symfony fa-8x"></i></a>
-            <a href="#"><i class="fab fa-react fa-8x"></i></a>
-            <a href="#"><i class="fab fa-node fa-8x"></i></a>
-            <a href="#"><i class="fas fa-database fa-8x"></i></a>
+            <div class="mobile">
+                <i class="fab fa-html5 fa-8x"></i>
+            <i class="fab fa-css3-alt fa-8x"></i>
+            <i class="fab fa-js-square fa-8x"></i>
+            <i class="fab fa-github fa-8x"></i>
+            <i class="fab fa-bootstrap fa-8x"></i>
+            <i class="fab fa-wordpress fa-8x"></i>
+            <i class="fab fa-sass fa-8x"></i>
+            <i class="fab fa-php fa-8x"></i>
+            <i class="fab fa-symfony fa-8x"></i>
+            <i class="fab fa-react fa-8x"></i>
+            <i class="fab fa-node fa-8x"></i>
+            <i class="fas fa-database fa-8x"></i>
+        </div>
+
+            <div class="desktop">
+                <div class="row">
+            <i class="fab fa-html5 fa-8x col-2"></i>
+            <i class="fab fa-css3-alt fa-8x col-2"></i>
+            <i class="fab fa-js-square fa-8x col-2"></i>
+            <i class="fab fa-github fa-8x col-2"></i>
+            <i class="fab fa-bootstrap fa-8x col-2"></i>
+            <i class="fab fa-wordpress fa-8x col-2"></i>
+            </div>
+            <div class="row">
+            <i class="fab fa-sass fa-8x col-2"></i>
+            <i class="fab fa-php fa-8x col-2"></i>
+            <i class="fab fa-symfony fa-8x col-2"></i>
+            <i class="fab fa-react fa-8x col-2"></i>
+            <i class="fab fa-node fa-8x col-2"></i>
+            <i class="fas fa-database fa-8x col-2"></i>
+            </div>
+        </div>
         </div>
     </section>
 
@@ -103,14 +128,13 @@
         <h2 id="passions">Mes passions :</h2>
         <ul>
             <li>Le football :</li>
-            <p>Je suis un grand passionné de football et plus particulierement de <img src="/img/om(1).png" alt="l'OM">
-                depuis mon plus jeune age et j'en
+            <p>Je suis un grand passionné de football et plus particulierement de l'OM depuis mon plus jeune age et j'en
                 pratique depuis mes 5 ans.</p>
             <li>Les jeux vidéos :</li>
             <p>Ma passion pour les jeux vidéos a commencée très tôt avec la Super Nintendo et Mario, depuis ma passion
                 n'a fait qu'accroitre , je suis fan de FPS et de jeux de sport.</p>
         </ul>
-        <p>J'ai également d'autre centres d'interêts comme le tennis , la musique et bien sur l'informatique.</p>
+        <p>J'ai également d'autres centres d'interêts comme le tennis , la musique et bien sur l'informatique.</p>
     </section>
 
 
@@ -131,7 +155,6 @@
     </div>
 
     <div class="contactme__icon">
-        <a href="#"><i class="fab fa-facebook fa-5x"></i></a>
         <a href="https://www.linkedin.com/in/allan-bocquet-804180188/" target="_blank"><i
                 class="fab fa-linkedin-in fa-5x"></i></a>
         <a href="https://github.com/Nalla-b" target="_blank"><i class="fab fa-github fa-5x"></i></a>
@@ -141,6 +164,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="/js/index.js"></script>
 </body>
-<footer>Copyright </footer>
+<footer>Copyright 2019 Allan Bocquet </footer>
 
 </html>

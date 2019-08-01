@@ -26,4 +26,15 @@ a:hover
 
 }
 
+@media screen and (min-width:1000px){
+  .projets__first{
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+
+  .projets{
+    text-align: center;
+  }
+}
+
 
