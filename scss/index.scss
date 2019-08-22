@@ -162,7 +162,8 @@ i{
   }
 
   .container{
-    margin-right: 28%;
+    margin: 0 auto;
+    display:block;
   }
 
   .mobile{
@@ -175,6 +176,10 @@ i{
 
   html{
     font-size: 1.5em;
+  }
+
+  .aboutme__name{
+    text-align: center;
   }
 
 
